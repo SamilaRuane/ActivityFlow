@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion AndroidConfig.compileSdk
+    defaultConfig {
+        minSdkVersion AndroidConfig.minSdk
+        targetSdkVersion AndroidConfig.targetSdk
+        versionCode Version.code
+        versionName Version.name
+        testInstrumentationRunner AndroidConfig.defaultTestRunner
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':external')
+
+    implementation Kotlin.standardLibrary
+
+    implementation Android.appCompat
+    implementation Android.constraintLayout
+
+    testImplementation UnitTest.jUnit
+    testImplementation UnitTest.mockito
+
+    androidTestImplementation AndroidTest.runner
+    androidTestImplementation AndroidTest.espresso
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
