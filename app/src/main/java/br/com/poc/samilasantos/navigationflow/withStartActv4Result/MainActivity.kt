@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import br.com.poc.samilasantos.navigationflow.R
-import br.com.poc.samilasantos.sdk.withStartActv4Result.ManagerActivity
+import br.com.poc.samilasantos.sdk.ManagerActivity
 import kotlinx.android.synthetic.main.activity_main.button
 
 class MainActivity : AppCompatActivity() {

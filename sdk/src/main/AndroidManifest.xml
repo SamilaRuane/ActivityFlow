@@ -3,7 +3,7 @@
     package="br.com.poc.samilasantos.sdk">
 
     <application>
-        <activity android:name=".withStartActv4Result.ManagerActivity"></activity>
+        <activity android:name=".ManagerActivity"></activity>
     </application>
 
 </manifest>

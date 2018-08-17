@@ -1,4 +1,4 @@
-package br.com.poc.samilasantos.sdk.withStartActv4Result
+package br.com.poc.samilasantos.sdk
 
 import android.app.Activity
 import android.content.Intent
@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import br.com.poc.samilasantos.external.withStartActivity4Result.ExternalActivity
-import br.com.poc.samilasantos.sdk.R
 
 class ManagerActivity : AppCompatActivity() {
 
