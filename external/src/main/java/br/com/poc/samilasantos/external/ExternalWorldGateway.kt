@@ -16,7 +16,7 @@ object ExternalWorldGateway {
      * As pending intents são enviadas como extras para a Activity do mundo externo
      *
      * */
-    fun callExternalActivity(
+    fun createExternalActivityIntent(
         context: Context,
         successIntent: PendingIntent,
         cancellationIntent: PendingIntent

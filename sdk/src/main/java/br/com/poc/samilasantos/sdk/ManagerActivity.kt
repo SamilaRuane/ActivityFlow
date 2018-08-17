@@ -92,7 +92,7 @@ class ManagerActivity : AppCompatActivity() {
             )
         }
 
-        return ExternalWorldGateway.callExternalActivity(
+        return ExternalWorldGateway.createExternalActivityIntent(
             this,
             pendingIntentToMyself,
             cancellationIntent
