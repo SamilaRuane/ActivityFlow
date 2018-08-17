@@ -10,6 +10,9 @@ import br.com.poc.samilasantos.external.Keys.SUCCESS_INTENT_KEY
 import kotlinx.android.synthetic.main.activity_external.cancellationButton
 import kotlinx.android.synthetic.main.activity_external.successButton
 
+/**
+ * Essa activity representa o mundo externo, os dois botões simulam um caso de sucesso e erro
+ * */
 class ExternalActivity : AppCompatActivity() {
 
     private lateinit var successIntent: PendingIntent
@@ -27,11 +30,18 @@ class ExternalActivity : AppCompatActivity() {
             cancellationIntent = intent.extras.getParcelable(
                 CANCELLATION_INTENT_KEY
             )
+
+            /**
+             * Chama Activity de sucesso
+             * */
             successButton.setOnClickListener {
                 successIntent.send(this, 0, extrasToSend)
                 finish()
             }
 
+            /**
+             * Chama Activity de cancelamento
+             * */
             cancellationButton.setOnClickListener {
                 cancellationIntent.send()
                 finish()
@@ -39,6 +49,9 @@ class ExternalActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Chama Activity de cancelamento
+     * */
     override fun onBackPressed() {
         finish()
         cancellationIntent.send()

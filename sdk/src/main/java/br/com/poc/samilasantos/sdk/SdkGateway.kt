@@ -10,6 +10,13 @@ import br.com.poc.samilasantos.external.Keys.SUCCESS_INTENT_REQUEST_CODE
 
 object SdkGateway {
 
+    /**
+     * Esse método é responsável por encapsular a chamada para a activity do sdk e criar as
+     * pending intent para as intents de sucesso e erro.
+     *
+     * As pending intents são enviadas como extras para a Activity do sdk
+     *
+     * */
     fun createCallerIntent(
         context: Context,
         successIntent: Intent,

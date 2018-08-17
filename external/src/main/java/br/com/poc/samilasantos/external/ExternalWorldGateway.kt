@@ -8,6 +8,14 @@ import br.com.poc.samilasantos.external.Keys.SUCCESS_INTENT_KEY
 
 object ExternalWorldGateway {
 
+
+    /**
+     * Esse método é responsável por criar encapsular a chamada para a activity do mundo externo e
+     * criar as pending intent para as intents de sucesso e erro.
+     *
+     * As pending intents são enviadas como extras para a Activity do mundo externo
+     *
+     * */
     fun callExternalActivity(
         context: Context,
         successIntent: PendingIntent,
