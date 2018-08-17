@@ -3,7 +3,8 @@
     package="br.com.poc.samilasantos.sdk">
 
     <application>
-        <activity android:name=".ManagerActivity"></activity>
+        <activity android:name=".ManagerActivity"
+            android:launchMode="singleTop" />
     </application>
 
 </manifest>

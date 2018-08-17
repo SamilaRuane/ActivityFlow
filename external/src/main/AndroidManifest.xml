@@ -3,7 +3,7 @@
     package="br.com.poc.samilasantos.external">
 
     <application>
-        <activity android:name=".withStartActivity4Result.ExternalActivity"></activity>
+        <activity android:name=".ExternalActivity"></activity>
     </application>
 
 </manifest>
