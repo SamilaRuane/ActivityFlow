@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
      * as telas que devem ser chamadas para caso o fluxo aconteça com sucesso ou o usuário cancele
      * a ação no meio do caminho.
      *
-     * Nestas mesmas intents é usada a FLAG_ACTIVITY_NEW_TASK e FLAG_ACTIVITY_CLEAR_TASK, a qual é
+     * Nestas mesmas intents é usada a FLAG_ACTIVITY_CLEAR_TASK, a qual é
      * responsável por limpar a stack antes de iniciar a activity.
      *
      * */
